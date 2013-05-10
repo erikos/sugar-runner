@@ -38,7 +38,7 @@ sugar_runner_window_create(int width, int height, gboolean fullscreen)
     XChangeProperty (display, window,
 		     XInternAtom(display, "_NET_WM_NAME", True),
 		     XInternAtom(display, "UTF8_STRING", True), 8,
-		     PropModeReplace, (unsigned char *)title, strlen (title));
+		     PropModeReplace, (unsigned char *)title, strlen(title));
 
     XMapWindow(display, window);
 
